@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Row, Col } from 'react-bootstrap'
 import { FiExternalLink, FiGithub, FiArrowUpRight, FiFolder } from 'react-icons/fi'
 import SectionHeading from './SectionHeading'
-import { projects } from '../data/portfolio'
+import { projects, profile } from '../data/portfolio'
 import { fadeUp, viewportOnce } from '../lib/motion'
 
 function ProjectCard({ project, index }) {
@@ -113,7 +113,7 @@ export default function Projects() {
         >
           Want to see more?{' '}
           <a
-            href={projects[0].links.github}
+            href={profile.social.github}
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-brand-600 underline-offset-4 hover:underline dark:text-brand-300"

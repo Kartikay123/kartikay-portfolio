@@ -183,7 +183,10 @@ export const projects = [
     tech: ['React.js', 'React Query', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
     accent: 'from-indigo-500 via-violet-500 to-fuchsia-500',
     featured: true,
-    links: { live: '#', github: 'https://github.com/Kartikay123' },
+    links: {
+      live: 'https://jobtracker-frontend-theta.vercel.app/login',
+      github: 'https://github.com/Kartikay123/jobtracker-frontend',
+    },
   },
   {
     name: 'Reservet',
@@ -198,7 +201,10 @@ export const projects = [
     tech: ['React.js', 'Redux', 'Node.js', 'Firebase', 'MongoDB'],
     accent: 'from-cyan-500 via-sky-500 to-blue-500',
     featured: true,
-    links: { live: '#', github: 'https://github.com/Kartikay123' },
+    links: {
+      live: 'https://reservet.netlify.app/',
+      github: 'https://github.com/Kartikay123/reservet',
+    },
   },
 ]
 
