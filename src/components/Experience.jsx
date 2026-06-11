@@ -79,7 +79,7 @@ export default function Experience() {
           eyebrow="Career"
           title="Where I’ve made an"
           highlight="impact."
-          subtitle="Three years across product engineering, design systems and AI evaluation."
+          subtitle="Three years building full-stack products — Spring Boot microservices, scalable UI architecture and data-rich dashboards."
         />
 
         <div className="relative mx-auto max-w-3xl">

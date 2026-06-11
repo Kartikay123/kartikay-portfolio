@@ -11,6 +11,7 @@ import {
 import { SiLeetcode } from 'react-icons/si'
 import {
   SiReact,
+  SiSpringboot,
   SiJavascript,
   SiNodedotjs,
   SiTailwindcss,
@@ -29,13 +30,24 @@ const socials = [
 ]
 
 const orbitIcons = [
-  { icon: SiReact, color: '#61DAFB', className: 'left-1/2 top-0 -translate-x-1/2', delay: 0 },
-  { icon: SiJavascript, color: '#F7DF1E', className: 'right-0 top-1/4', delay: 0.6 },
-  { icon: SiNodedotjs, color: '#5FA04E', className: 'bottom-1/4 right-0', delay: 1.2 },
-  { icon: SiTailwindcss, color: '#06B6D4', className: 'bottom-0 left-1/2 -translate-x-1/2', delay: 1.8 },
-  { icon: SiDocker, color: '#2496ED', className: 'bottom-1/4 left-0', delay: 2.4 },
-  { icon: SiPython, color: '#3776AB', className: 'left-0 top-1/4', delay: 3 },
+  { icon: SiReact, color: '#61DAFB' },
+  { icon: SiSpringboot, color: '#6DB33F' },
+  { icon: SiJavascript, color: '#F7DF1E' },
+  { icon: SiNodedotjs, color: '#5FA04E' },
+  { icon: SiTailwindcss, color: '#06B6D4' },
+  { icon: SiDocker, color: '#2496ED' },
+  { icon: SiPython, color: '#3776AB' },
 ]
+
+// Evenly distribute the icons around the ring (start at the top, sweep clockwise).
+const ORBIT_RADIUS = 47 // % of the (square) container
+const orbitPositions = orbitIcons.map((_, i) => {
+  const angle = (i / orbitIcons.length) * 2 * Math.PI - Math.PI / 2
+  return {
+    left: 50 + ORBIT_RADIUS * Math.cos(angle),
+    top: 50 + ORBIT_RADIUS * Math.sin(angle),
+  }
+})
 
 export default function Hero() {
   const role = useTypewriter(profile.roles)
@@ -97,10 +109,10 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div variants={fadeUp} className="mt-9 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
             <a
-              href="#projects"
+              href="#experience"
               onClick={(e) => {
                 e.preventDefault()
-                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+                document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })
               }}
               className="btn-primary group"
             >
@@ -163,11 +175,19 @@ export default function Hero() {
 
           {/* floating tech icons — positioning on a static wrapper so the
               Framer float animation never fights a Tailwind transform utility */}
-          {orbitIcons.map(({ icon: Icon, color, className, delay }, i) => (
-            <div key={i} className={`absolute ${className}`}>
+          {orbitIcons.map(({ icon: Icon, color }, i) => (
+            <div
+              key={i}
+              className="absolute"
+              style={{
+                left: `${orbitPositions[i].left}%`,
+                top: `${orbitPositions[i].top}%`,
+                transform: 'translate(-50%, -50%)',
+              }}
+            >
               <motion.div
                 animate={{ y: [0, -14, 0] }}
-                transition={{ duration: 4 + i * 0.4, repeat: Infinity, ease: 'easeInOut', delay }}
+                transition={{ duration: 4 + i * 0.4, repeat: Infinity, ease: 'easeInOut', delay: i * 0.45 }}
                 className="grid h-12 w-12 place-items-center rounded-2xl border border-slate-200/80 bg-white/90 shadow-card backdrop-blur-md dark:border-white/10 dark:bg-ink-800/90"
               >
                 <Icon className="h-6 w-6" style={{ color }} />

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import {
-  FiCode,
+  FiServer,
   FiLayout,
   FiZap,
   FiGitBranch,
@@ -19,19 +19,19 @@ const highlights = [
     text: 'Reusable component systems & design-system thinking across 7+ products.',
   },
   {
-    icon: FiZap,
-    title: 'Data-Rich Dashboards',
-    text: '50+ visualizations with Apache ECharts, tuned for large datasets.',
+    icon: FiServer,
+    title: 'Real-Time Backend',
+    text: 'Spring Boot microservices over WebSockets, with OAuth 2.0 SSO via Spring Security.',
   },
   {
-    icon: FiCode,
-    title: 'Full-Stack Delivery',
-    text: 'React + Redux frontends wired to REST APIs, auth and CI/CD.',
+    icon: FiZap,
+    title: 'Data-Rich Dashboards',
+    text: '40+ metrics and 50+ Apache ECharts visualizations, tuned for large datasets.',
   },
   {
     icon: FiGitBranch,
     title: 'Performance & DX',
-    text: 'Optimized state, rendering and tooling that speeds up the whole team.',
+    text: 'Code-splitting, lazy loading and memoization — validated with Lighthouse & DevTools.',
   },
 ]
 
@@ -49,7 +49,7 @@ export default function About() {
           eyebrow="About me"
           title="Engineer who sweats the"
           highlight="details."
-          subtitle="A frontend-leaning full-stack developer turning complex problems into clean, performant interfaces."
+          subtitle="A full-stack engineer turning complex problems into clean, performant products — from React interfaces to Spring Boot services."
         />
 
         <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
