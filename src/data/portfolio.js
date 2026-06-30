@@ -52,7 +52,7 @@ export const profile = {
     "I'm a full-stack engineer who loves turning complex requirements into clean, scalable products. Over the past few years I've led UI architecture for a B2C sports-analytics platform, architected real-time Spring Boot microservices, shipped reusable component libraries used across 7+ products, and built secure OAuth 2.0 identity systems.",
     "I care deeply about performance, design detail and developer experience. When I’m not shipping features, you’ll find me on LeetCode — 1000+ problems solved, a peak rating of 1831, and a Smart India Hackathon National Finalist run to show for it.",
   ],
-  resumeUrl: "/Kartikay_Gupta_Resume.pdf?v=2",
+  resumeUrl: "/Kartikay_Gupta_Resume.pdf?v=3",
   social: {
     github: "https://github.com/Kartikay123",
     linkedin: "https://www.linkedin.com/in/kartikay-gupta-1498a7200/",

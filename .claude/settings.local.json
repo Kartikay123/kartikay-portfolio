@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp Kartikay.pdf public/Kartikay_Gupta_Resume.pdf)",
+      "Bash(md5 -q Kartikay.pdf public/Kartikay_Gupta_Resume.pdf)"
+    ]
+  }
+}
