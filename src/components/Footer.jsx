@@ -38,7 +38,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-              {profile.title} based in Bengaluru. Crafting fast, scalable and beautiful web experiences.
+              {profile.title} based in Pune. Crafting fast, scalable and beautiful web experiences.
             </p>
             <div className="mt-5 flex items-center gap-3">
               {socials.map(({ icon: Icon, href, label }) => (

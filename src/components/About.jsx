@@ -36,8 +36,8 @@ const highlights = [
 ]
 
 const quickFacts = [
-  { icon: FiBriefcase, label: 'Open to', value: 'Frontend / Full-Stack roles' },
-  { icon: FiMapPin, label: 'Based in', value: 'Bengaluru, India' },
+  { icon: FiBriefcase, label: 'Open to', value: 'Full-Stack / AI roles' },
+  { icon: FiMapPin, label: 'Based in', value: 'Pune, India' },
   { icon: FiMail, label: 'Reach me', value: profile.email },
 ]
 

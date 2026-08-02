@@ -7,52 +7,43 @@ import {
   SiReact,
   SiRedux,
   SiNodedotjs,
-  SiExpress,
-  SiFastapi,
   SiJavascript,
-  SiTypescript,
   SiPython,
   SiCplusplus,
-  SiTailwindcss,
-  SiBootstrap,
   SiMysql,
-  SiMongodb,
-  SiFirebase,
+  SiRedis,
   SiDocker,
   SiGit,
-  SiGithub,
   SiSpringboot,
-  SiSpringsecurity,
-  SiStorybook,
-  SiApacheecharts,
-  SiFramer,
-  SiReactquery,
-  SiOpenai,
+  SiThealgorithms,
 } from "react-icons/si";
-import { FaAws, FaJava } from "react-icons/fa6";
+import { FaAws } from "react-icons/fa6";
+import { VscVscode } from "react-icons/vsc";
+import { TbSitemap } from "react-icons/tb";
 
 export const profile = {
   name: "Kartikay Gupta",
   firstName: "Kartikay",
   initials: "KG",
   roles: [
-    "Frontend Engineer",
     "Full-Stack Developer",
+    "AI Trainer",
+    "Frontend Engineer",
     "React Specialist",
     "Competitive Programmer",
   ],
-  title: "Frontend / Full-Stack Engineer",
-  location: "Bengaluru, Karnataka, India",
+  title: "Full-Stack Developer & AI Trainer",
+  location: "Pune, Maharashtra, India",
   email: "kartikg052@gmail.com",
   phone: "+91 74896 57221",
   phoneRaw: "+917489657221",
   tagline:
-    "I build fast, scalable products end to end — from real-time Spring Boot microservices to data-rich React dashboards with 50+ visualizations.",
+    "I build fast, scalable products end to end — from real-time microservices to data-rich React dashboards — and train frontier AI models at micro1.ai.",
   about: [
-    "I'm a full-stack engineer who loves turning complex requirements into clean, scalable products. Over the past few years I've led UI architecture for a B2C sports-analytics platform, architected real-time Spring Boot microservices, shipped reusable component libraries used across 7+ products, and built secure OAuth 2.0 identity systems.",
-    "I care deeply about performance, design detail and developer experience. When I’m not shipping features, you’ll find me on LeetCode — 1000+ problems solved, a peak rating of 1831, and a Smart India Hackathon National Finalist run to show for it.",
+    "I'm a full-stack engineer who loves turning complex requirements into clean, scalable products. Right now I work at micro1.ai in a dual role — as an AI trainer collaborating with US-based teams building products at OpenAI (ChatGPT) and Anthropic (Claude), and as a full-stack developer shipping 48+ features on Feather, their internal platform.",
+    "Before that, I led UI architecture for a B2C sports-analytics platform, architected real-time Spring Boot microservices, shipped reusable component libraries used across 7+ products, and built secure OAuth 2.0 identity systems. When I’m not shipping features, you’ll find me on LeetCode — 1000+ problems solved, a peak rating of 1831, and a Smart India Hackathon National Finalist run to show for it.",
   ],
-  resumeUrl: "/Kartikay_Gupta_Resume.pdf?v=3",
+  resumeUrl: "/Kartikay_Gupta_Resume.pdf?v=4",
   social: {
     github: "https://github.com/Kartikay123",
     linkedin: "https://www.linkedin.com/in/kartikay-gupta-1498a7200/",
@@ -65,7 +56,7 @@ export const stats = [
   { value: 1000, suffix: "+", label: "LeetCode problems solved" },
   { value: 1831, suffix: "", label: "Peak LeetCode rating" },
   { value: 65, suffix: "+", label: "Coding contests" },
-  { value: 3, suffix: "", label: "Years of experience" },
+  { value: 2, suffix: "+", label: "Years of experience" },
 ];
 
 export const skillGroups = [
@@ -74,70 +65,58 @@ export const skillGroups = [
     icon: "code",
     skills: [
       { name: "C++", icon: SiCplusplus, color: "#00599C" },
-      { name: "Java", icon: FaJava, color: "#E76F00" },
-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
       { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      {
+        name: "Data Structures & Algorithms",
+        icon: SiThealgorithms,
+        color: "#00BCB4",
+      },
     ],
   },
   {
-    title: "Frontend",
+    title: "Frameworks & Libraries",
     icon: "layout",
     skills: [
       { name: "React.js", icon: SiReact, color: "#61DAFB" },
       { name: "Redux", icon: SiRedux, color: "#764ABC" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-      { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
-      { name: "Framer Motion", icon: SiFramer, color: "#0055FF" },
-      { name: "Apache ECharts", icon: SiApacheecharts, color: "#AA344D" },
-      { name: "Storybook", icon: SiStorybook, color: "#FF4785" },
-    ],
-  },
-  {
-    title: "Backend & Data",
-    icon: "server",
-    skills: [
       { name: "Node.js", icon: SiNodedotjs, color: "#5FA04E" },
       { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
-      { name: "Spring Security", icon: SiSpringsecurity, color: "#6DB33F" },
-      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
-
-      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+      { name: "Redis", icon: SiRedis, color: "#FF4438" },
     ],
   },
   {
-    title: "Tools & Infra",
+    title: "Tools & Infrastructure",
     icon: "tool",
     skills: [
+      { name: "VS Code", icon: VscVscode, color: "#007ACC" },
       { name: "Git", icon: SiGit, color: "#F05032" },
-      { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
       { name: "Docker", icon: SiDocker, color: "#2496ED" },
+      { name: "System Design", icon: TbSitemap, color: "#8B5CF6" },
       { name: "AWS", icon: FaAws, color: "#FF9900" },
-      { name: "OpenAI", icon: SiOpenai, color: "#10A37F" },
     ],
   },
 ];
 
 export const experiences = [
   {
-    company: "Micro1.AI",
-    role: "Full Stack Developer",
+    company: "micro1.ai",
+    role: "Full Stack Developer + AI Trainer",
     location: "Remote",
-    period: "Mar 2026 — Jun 2026",
+    period: "Mar 2026 — Present",
     current: true,
     summary:
-      "Full-stack developer shipping interactive product features end to end, using AI-assisted workflows to accelerate delivery without trading away quality.",
+      "Dual-role contract engagement with US-based teams — training frontier AI models and shipping full-stack features on Feather, micro1's internal platform.",
     points: [
-      "Delivered 52+ full-stack features built with React, Node.js, Express.js, Framer Motion and Tailwind CSS across interactive applications.",
-      "Applied AI-assisted development workflows (Gemini, ChatGPT, Claude) to speed up delivery while ensuring code quality, performance optimization and responsive UI.",
+      "Working as an AI trainer in a contract-based engagement with US-based teams — collaborating closely with AI engineers, researchers and developers building products at OpenAI (ChatGPT) and Anthropic (Claude) in a globally distributed, high-performance environment.",
+      "Contributing as a Full-Stack Developer on Feather, an internal platform — built 48+ features using React, Node.js, Framer Motion, Tailwind CSS and MySQL.",
+      "Improved web performance and responsiveness, built reusable task templates with validation, implemented rate-limiting middleware and applied database locking for safe concurrent requests.",
     ],
-    tech: ["React", "Node.js", "Express.js", "Framer Motion", "Tailwind CSS"],
+    tech: ["React", "Node.js", "MySQL", "Framer Motion", "Tailwind CSS"],
   },
   {
-    company: "QMC Training Intelligence",
+    company: "ZaarviQ",
     role: "Web Development Engineer II",
     location: "Remote",
     period: "Sep 2025 — Mar 2026",
@@ -254,7 +233,7 @@ export const education = [
     school: "Jabalpur Engineering College",
     degree: "B.Tech · Computer Science and Engineering",
     period: "2020 — 2024",
-    detail: "CGPA 8.24 / 10",
+    detail: "CGPA 8.25 / 10",
   },
 ];
 
