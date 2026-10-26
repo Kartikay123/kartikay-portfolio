@@ -41,7 +41,7 @@ export default function Skills() {
           {skillGroups.map((group, i) => {
             const GroupIcon = groupIcon[group.icon] ?? FiCode
             return (
-              <Col key={group.title} xs={12} md={6} lg={4} className="d-flex">
+              <Col key={group.title} xs={12} md={6} className="d-flex">
                 <motion.div
                   variants={fadeUp}
                   initial="hidden"

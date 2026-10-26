@@ -79,7 +79,7 @@ export default function Experience() {
           eyebrow="Career"
           title="Where I’ve made an"
           highlight="impact."
-          subtitle="From Spring Boot microservices and data-rich dashboards to training frontier AI models — building full-stack products since 2024."
+          subtitle="From React products and Node.js APIs to Spring Boot microservices and data-rich dashboards — building full-stack products since 2024."
         />
 
         <div className="relative mx-auto max-w-3xl">

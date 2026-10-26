@@ -15,35 +15,35 @@ import {
   SiDocker,
   SiGit,
   SiSpringboot,
-  SiThealgorithms,
+  SiOpenjdk,
+  SiTypescript,
+  SiTailwindcss,
+  SiBootstrap,
+  SiHtml5,
+  SiCss,
+  SiStorybook,
+  SiFirebase,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa6";
-import { VscVscode } from "react-icons/vsc";
-import { TbSitemap } from "react-icons/tb";
+import { TbSitemap, TbApi, TbTopologyStar3, TbRobot } from "react-icons/tb";
 
 export const profile = {
   name: "Kartikay Gupta",
   firstName: "Kartikay",
   initials: "KG",
-  roles: [
-    "Full-Stack Developer",
-    "AI Trainer",
-    "Frontend Engineer",
-    "React Specialist",
-    "Competitive Programmer",
-  ],
-  title: "Full-Stack Developer & AI Trainer",
+  roles: ["Full-Stack Developer", "Software Engineer", "Frontend Engineer"],
+  title: "Full-Stack Software Engineer",
   location: "Pune, Maharashtra, India",
   email: "kartikg052@gmail.com",
   phone: "+91 74896 57221",
   phoneRaw: "+917489657221",
   tagline:
-    "I build fast, scalable products end to end — from real-time microservices to data-rich React dashboards — and train frontier AI models at micro1.ai.",
+    "I build fast, scalable products end to end — React interfaces, Node.js APIs, Spring Boot microservices and data-rich dashboards.",
   about: [
-    "I'm a full-stack engineer who loves turning complex requirements into clean, scalable products. Right now I work at micro1.ai in a dual role — as an AI trainer collaborating with US-based teams building products at OpenAI (ChatGPT) and Anthropic (Claude), and as a full-stack developer shipping 48+ features on Feather, their internal platform.",
-    "Before that, I led UI architecture for a B2C sports-analytics platform, architected real-time Spring Boot microservices, shipped reusable component libraries used across 7+ products, and built secure OAuth 2.0 identity systems. When I’m not shipping features, you’ll find me on LeetCode — 1000+ problems solved, a peak rating of 1831, and a Smart India Hackathon National Finalist run to show for it.",
+    "I'm a software engineer who loves turning complex requirements into clean, scalable products — with a focus on frontend architecture, performance, authentication and data-rich dashboards. Right now I'm a Full Stack Developer + AI at micro1.ai, where I've shipped 48+ features on Feather, their internal platform, and built the component library behind 7+ internal products.",
+    "Before that, I led frontend development for a multi-sport analytics platform, designed real-time Spring Boot microservices, built a centralized OAuth 2.0 identity provider, and shipped Node.js APIs for an academic platform. When I’m not shipping features, you’ll find me on LeetCode — 1000+ problems solved, a peak rating of 1831, and a Smart India Hackathon National Finalist run to show for it.",
   ],
-  resumeUrl: "/Kartikay_Gupta_Resume.pdf?v=4",
+  resumeUrl: "/Kartikay_Gupta_Resume.pdf?v=5",
   social: {
     github: "https://github.com/Kartikay123",
     linkedin: "https://www.linkedin.com/in/kartikay-gupta-1498a7200/",
@@ -66,35 +66,46 @@ export const skillGroups = [
     skills: [
       { name: "C++", icon: SiCplusplus, color: "#00599C" },
       { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "Java", icon: SiOpenjdk, color: "#E76F00" },
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-      {
-        name: "Data Structures & Algorithms",
-        icon: SiThealgorithms,
-        color: "#00BCB4",
-      },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
     ],
   },
   {
-    title: "Frameworks & Libraries",
+    title: "Frontend",
     icon: "layout",
     skills: [
       { name: "React.js", icon: SiReact, color: "#61DAFB" },
       { name: "Redux", icon: SiRedux, color: "#764ABC" },
-      { name: "Node.js", icon: SiNodedotjs, color: "#5FA04E" },
-      { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
-      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
-      { name: "Redis", icon: SiRedis, color: "#FF4438" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
+      { name: "HTML", icon: SiHtml5, color: "#E34F26" },
+      { name: "CSS", icon: SiCss, color: "#663399" },
+      { name: "Storybook", icon: SiStorybook, color: "#FF4785" },
     ],
   },
   {
-    title: "Tools & Infrastructure",
+    title: "Backend & Data",
+    icon: "server",
+    skills: [
+      { name: "Node.js", icon: SiNodedotjs, color: "#5FA04E" },
+      { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
+      { name: "REST APIs", icon: TbApi, color: "#10B981" },
+      { name: "Microservices", icon: TbTopologyStar3, color: "#F59E0B" },
+      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+      { name: "Redis", icon: SiRedis, color: "#FF4438" },
+      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+    ],
+  },
+  {
+    title: "Tools & Cloud",
     icon: "tool",
     skills: [
-      { name: "VS Code", icon: VscVscode, color: "#007ACC" },
       { name: "Git", icon: SiGit, color: "#F05032" },
       { name: "Docker", icon: SiDocker, color: "#2496ED" },
-      { name: "System Design", icon: TbSitemap, color: "#8B5CF6" },
       { name: "AWS", icon: FaAws, color: "#FF9900" },
+      { name: "System Design", icon: TbSitemap, color: "#8B5CF6" },
+      { name: "AI Agents", icon: TbRobot, color: "#EC4899" },
     ],
   },
 ];
@@ -102,18 +113,18 @@ export const skillGroups = [
 export const experiences = [
   {
     company: "micro1.ai",
-    role: "Full Stack Developer + AI Trainer",
+    role: "Full Stack Developer + AI",
     location: "Remote",
     period: "Mar 2026 — Present",
     current: true,
     summary:
-      "Dual-role contract engagement with US-based teams — training frontier AI models and shipping full-stack features on Feather, micro1's internal platform.",
+      "Shipping full-stack features on Feather, micro1's internal platform, and the shared component library behind 7+ internal products.",
     points: [
-      "Working as an AI trainer in a contract-based engagement with US-based teams — collaborating closely with AI engineers, researchers and developers building products at OpenAI (ChatGPT) and Anthropic (Claude) in a globally distributed, high-performance environment.",
-      "Contributing as a Full-Stack Developer on Feather, an internal platform — built 48+ features using React, Node.js, Framer Motion, Tailwind CSS and MySQL.",
-      "Improved web performance and responsiveness, built reusable task templates with validation, implemented rate-limiting middleware and applied database locking for safe concurrent requests.",
+      "Built 48+ features for Feather, an internal platform, using React, Node.js, Redux, Tailwind CSS and MySQL.",
+      "Improved the platform with responsive UI, reusable task templates and validation, performance enhancements, rate-limiting middleware and database locking for concurrent requests.",
+      "Created a reusable component library with React, TypeScript, Shoelace, Tailwind CSS and Storybook to support 7+ internal products and improve UI consistency.",
     ],
-    tech: ["React", "Node.js", "MySQL", "Framer Motion", "Tailwind CSS"],
+    tech: ["React", "Node.js", "Redux", "MySQL", "TypeScript", "Storybook"],
   },
   {
     company: "ZaarviQ",
@@ -124,14 +135,15 @@ export const experiences = [
     summary:
       "Owned both backend microservices and the frontend for TrainingSets — a B2C multi-sport analytics platform built on large, real-time activity datasets.",
     points: [
-      "Architected backend Spring Boot microservices enabling real-time athlete–coach communication over WebSockets — modular, horizontally scalable services with low-latency message handling.",
-      "Integrated a centralized OAuth 2.0 Identity Provider with Spring Boot, Spring Security and Spring Authorization Server, enabling secure SSO and JWT-based auth across platform services.",
-      "Led frontend of TrainingSets with React, JavaScript, Tailwind and Bootstrap — 40+ physiological metrics and 50+ data visualizations via high-performance Apache ECharts dashboards.",
-      "Owned the LLD of WorkoutStudio and PlanBuilder — reusable component hierarchies, state flows and API integration layers that cut feature development time by 25%.",
+      "Designed Spring Boot microservices and WebSocket-based communication for real-time athlete–coach messaging, with modular services for low-latency message handling.",
+      "Built a centralized OAuth 2.0 identity provider using Spring Security and Spring Authorization Server, enabling SSO and JWT-based authentication across platform services.",
+      "Led frontend development of TrainingSets, a multi-sport analytics platform, delivering 40+ physiological metrics and 50+ visualizations using React and Apache ECharts.",
+      "Owned low-level design for WorkoutStudio and PlanBuilder, defining component hierarchies, state flows and API integration layers — reduced feature development time by 25%.",
     ],
     tech: [
       "Spring Boot",
       "WebSockets",
+      "OAuth 2.0",
       "Spring Security",
       "React",
       "Apache ECharts",
@@ -144,13 +156,13 @@ export const experiences = [
     period: "Jun 2024 — Aug 2025",
     current: false,
     summary:
-      "Built and optimized client-facing web apps and a shared component library powering a suite of internal products.",
+      "Built client-facing React apps, Node.js APIs for the Gurukul academic platform, and marketing pages for an international trade event.",
     points: [
-      "Developed and optimized a client-facing web app in React and Tailwind CSS with a modular, reusable component architecture; improved page-load performance via code splitting, lazy loading, memoization and bundle-size optimization — validated with Lighthouse and Chrome DevTools.",
-      "Built a reusable component library for 7+ internal products using React, TypeScript, Shoelace, Tailwind and Storybook — improving UI consistency and cutting development time.",
-      "Designed marketing landing pages and 12 case-study pages for the ITSA trade event (Germany) with HTML, CSS, Bootstrap and JavaScript.",
+      "Built and optimized a client-facing React application with Tailwind CSS and Redux; applied code splitting, lazy loading, memoization and bundle optimization to improve page performance.",
+      "Developed Node.js REST APIs and MySQL data logic for Gurukul, supporting assignments, feedback, test announcements, student groups and professor–student requests.",
+      "Created marketing landing pages and 12 case-study pages for the ITSA trade event in Germany using HTML, CSS, Bootstrap and JavaScript.",
     ],
-    tech: ["React", "Tailwind CSS", "TypeScript", "Storybook", "Performance"],
+    tech: ["React", "Redux", "Tailwind CSS", "Node.js", "MySQL", "Performance"],
   },
 ];
 
